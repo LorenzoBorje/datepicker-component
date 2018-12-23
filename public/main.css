@@ -6,8 +6,8 @@
   height: 100%;
   text-align: center;
   background: 0 0;
-  border: 2px solid #00a699;
-  color: #00a699;
+  border: 2px solid #2a7fff;
+  color: #2a7fff;
   padding: 4px 12px;
   margin-right: 8px;
   font: inherit;
@@ -23,7 +23,7 @@
 }
 .PresetDateRangePicker_button__selected {
   color: #fff;
-  background: #00a699
+  background: #2a7fff
 }
 .SingleDatePickerInput {
   display: inline-block;
@@ -189,7 +189,7 @@
 }
 .DayPickerKeyboardShortcuts_show__bottomRight::before {
   border-top: 26px solid transparent;
-  border-right: 33px solid #00a699;
+  border-right: 33px solid #2a7fff;
   bottom: 0;
   right: 0
 }
@@ -202,7 +202,7 @@
 }
 .DayPickerKeyboardShortcuts_show__topRight::before {
   border-bottom: 26px solid transparent;
-  border-right: 33px solid #00a699;
+  border-right: 33px solid #2a7fff;
   top: 0;
   right: 0
 }
@@ -215,7 +215,7 @@
 }
 .DayPickerKeyboardShortcuts_show__topLeft::before {
   border-bottom: 26px solid transparent;
-  border-left: 33px solid #00a699;
+  border-left: 33px solid #2a7fff;
   top: 0;
   left: 0
 }
@@ -295,7 +295,7 @@
   cursor: default
 }
 .CalendarDay__default {
-  border: 1px solid #e4e7e7;
+  /* border: 1px solid #e4e7e7; */
   color: #484848;
   background: #fff
 }
@@ -319,7 +319,7 @@
 }
 .CalendarDay__blocked_minimum_nights {
   background: #fff;
-  border: 1px solid #eceeee;
+  /* border: 1px solid #eceeee; */
   color: #cacccd
 }
 .CalendarDay__blocked_minimum_nights:active,
@@ -337,37 +337,37 @@
   color: #484848
 }
 .CalendarDay__selected_span {
-  background: #66e2da;
-  border: 1px double #33dacd;
+  background: #2a7fff;
+  border: 1px double #2a7fff;
   color: #fff
 }
 .CalendarDay__selected_span:active,
 .CalendarDay__selected_span:hover {
-  background: #33dacd;
-  border: 1px double #33dacd;
+  background: #2a7fff;
+  border: 1px double #2a7fff;
   color: #fff
 }
 .CalendarDay__last_in_range,
 .CalendarDay__last_in_range:hover {
-  border-style: solid
+  /* border-style: solid */
 }
 .CalendarDay__selected,
 .CalendarDay__selected:active,
 .CalendarDay__selected:hover {
-  background: #00a699;
-  border: 1px double #00a699;
+  background: #2a7fff;
+  border: 1px double #2a7fff;
   color: #fff
 }
 .CalendarDay__hovered_span,
 .CalendarDay__hovered_span:hover {
-  background: #b2f1ec;
-  border: 1px double #80e8e0;
-  color: #007a87
+  background: #2a7fff;
+  border: 1px double #2a7fff;
+  color: #FFF;
 }
 .CalendarDay__hovered_span:active {
-  background: #80e8e0;
-  border: 1px double #80e8e0;
-  color: #007a87
+  background: #2a7fff;
+  border: 1px double #2a7fff;
+  color: #FFF;
 }
 .CalendarDay__blocked_calendar,
 .CalendarDay__blocked_calendar:active,
@@ -380,12 +380,13 @@
 .CalendarDay__blocked_out_of_range:active,
 .CalendarDay__blocked_out_of_range:hover {
   background: #fff;
-  border: 1px solid #e4e7e7;
+  /* border: 1px solid #e4e7e7; */
   color: #cacccd
 }
 .CalendarMonth {
   background: #fff;
-  text-align: center;
+  text-align: right;
+  float: right;
   vertical-align: top;
   -webkit-user-select: none;
   -moz-user-select: none;
@@ -472,7 +473,7 @@
   margin: 0
 }
 .DayPickerNavigation_button__default {
-  border: 1px solid #e4e7e7;
+  /* border: 1px solid #e4e7e7; */
   background-color: #fff;
   color: #757575
 }
@@ -510,7 +511,7 @@
 .DayPickerNavigation_button__verticalDefault {
   padding: 5px;
   background: #fff;
-  box-shadow: 0 0 5px 2px rgba(0,0,0,.1);
+  /* box-shadow: 0 0 5px 2px rgba(0,0,0,.1); */
   position: relative;
   display: inline-block;
   text-align: center;
@@ -540,7 +541,7 @@
 .DayPicker {
   background: #fff;
   position: relative;
-  text-align: left
+  text-align: center;
 }
 .DayPicker__horizontal {
   background: #fff
@@ -591,7 +592,7 @@
 .DayPicker_weekHeader__verticalScrollable {
   top: 0;
   display: table-row;
-  border-bottom: 1px solid #dbdbdb;
+  /* border-bottom: 1px solid #dbdbdb; */
   background: #fff;
   margin-left: 0;
   left: 0;
@@ -867,12 +868,37 @@ div.DateRangePickerInput.DateRangePickerInput_1.DateRangePickerInput__withBorder
   margin: 0 auto;
 }
 
-.submit {
-  width: 300px;
+
+
+#submit {
+  display: block;
+  width: 250px;
   height: 50px;
-  margin-top: 50px;
+  margin: 0 auto;
   border: none;
   font: inherit;
   color: #FFF;
-  background-color: #1b9ce2;
+  background-color: #2a7fff;
+}
+
+a#clear {
+  display: block;
+  text-decoration: none;
+  text-align: center;
+}
+
+#feedback {
+  font-size: 12px;
+  text-align: center;
+}
+
+#reset {
+  font-size: 12px;
+  display: block;
+  margin: 10px auto;
+}
+
+.footer {
+  position: relative;
+  top: -30px;
 }

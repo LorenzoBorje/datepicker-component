@@ -2,7 +2,6 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
-import jQuery from 'jquery';
 import * as serviceWorker from './serviceWorker';
 
 
@@ -11,20 +10,27 @@ const urlParams = new URLSearchParams(window.location.search);
 const userId = urlParams.get('userId');
 const platform = urlParams.get('platform');
 
-const submitButton = document.getElementById('submit');
-
-let dates = {};
 
 ReactDOM.render(<App />, document.getElementById('root'));
 
-console.log(document.getElementById('start-date'));
-
+const submitButton = document.getElementById('submit');
+// const clearButton = document.getElementById('clear');
 serviceWorker.unregister();
+
+
+// clearButton.addEventListener('click', (e) => {
+//   e.preventDefault();
+//   document.getElementById('start-date').value = null;
+//   console.log(document.getElementById('start-date').value);
+//   document.getElementById('end-date').value = null;
+
+// });
+
 
 submitButton.addEventListener('click', (e) => {
   const startDate = document.getElementById('start-date').value;
   const endDate = document.getElementById('end-date').value;
-  let url = 'https://hotel-dev-225712.firebaseio.com/users.json'
+  // let url = 'https://hotel-dev-225712.firebaseio.com/users.json'
   let options = {
     method: 'POST',
     body: {
@@ -39,6 +45,6 @@ submitButton.addEventListener('click', (e) => {
   }
   console.log(options)
  
-})
+});
 
 
